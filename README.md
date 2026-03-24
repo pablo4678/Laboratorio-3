@@ -44,12 +44,12 @@ Se calcula a partir de dos variables derivadas de la señal PPG:
 Su expresión matemática es:
 
 
-SPI = 100 - (0.33 \cdot PPGA_{norm} + 0.67 \cdot HBI_{norm})
+$$SPI = 100 - (0.33 \cdot PPGA_{norm} + 0.67 \cdot HBI_{norm})$$
 
 
 Donde:
-- PPGA_norm: amplitud normalizada del pulso  
-- HBI_norm: intervalo entre latidos normalizado
+- $PPGA_norm$: amplitud normalizada del pulso  
+- $HBI_norm:$ intervalo entre latidos normalizado
 
 Valores típicos:
 - 20 – 50 analgesia adecuada  
