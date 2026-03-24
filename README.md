@@ -89,7 +89,7 @@ El CPT consiste en sumergir la mano en agua fría para inducir activación simp�
 
 # Resultados y análisis
 
-## Análisis 1: Comparación con valores clínicos
+## Comparación con valores clínicos
 
 Los resultados obtenidos durante la práctica muestran un comportamiento coherente del Índice Pletismográfico Quirúrgico (SPI) en relación con las distintas fases del protocolo experimental. Durante la fase inicial de reposo, los valores del SPI se mantuvieron relativamente estables y dentro de un rango bajo, lo cual es consistente con un estado de baja activación simpática y predominio parasimpático. Este comportamiento concuerda con los rangos reportados en la literatura clínica, donde valores entre 20 y 50 se consideran indicativos de un nivel adecuado de analgesia en pacientes sometidos a anestesia general [5].
 
@@ -99,7 +99,7 @@ Durante la fase de recuperación, una vez finalizado el estímulo, los valores d
 
 ---
 
-## Análisis 2: Alcance y limitaciones del SPI
+## Alcance y limitaciones del SPI
 
 El SPI representa una herramienta valiosa para la estimación indirecta de la nocicepción debido a su carácter no invasivo y su capacidad de proporcionar información en tiempo real. Su implementación a partir de señales PPG lo hace especialmente atractivo, ya que permite utilizar sensores de bajo costo y fácil integración en sistemas portátiles. En el contexto clínico, su principal aplicación se encuentra en la monitorización del balance entre nocicepción y analgesia durante procedimientos quirúrgicos, donde la evaluación subjetiva del dolor no es posible [6].
 
@@ -111,7 +111,7 @@ Adicionalmente, la señal PPG es susceptible a artefactos de movimiento, variaci
 
 # Preguntas de discusión
 
-## Pregunta 1: Relación entre volumen sanguíneo periférico y balance autonómico
+## Relación entre volumen sanguíneo periférico y balance autonómico
 
 Las variaciones del volumen sanguíneo periférico están directamente relacionadas con el balance entre los sistemas simpático y parasimpático del sistema nervioso autónomo. En situaciones de activación simpática, como las inducidas por el dolor o el estrés, se produce vasoconstricción periférica, lo que reduce el flujo sanguíneo en los capilares y disminuye la amplitud de la señal PPG. Por el contrario, en estados de relajación, el predominio parasimpático favorece la vasodilatación, incrementando el volumen sanguíneo periférico y la amplitud de la señal.
 
@@ -119,7 +119,7 @@ Este comportamiento permite utilizar la señal PPG como un indicador indirecto d
 
 ---
 
-## Pregunta 2: Comparación con otros índices
+## Comparación con otros índices
 
 El SPI se diferencia de otros índices utilizados en anestesia, como el índice de nocicepción-analgesia (ANI) y el índice de perfusión, en los mecanismos fisiológicos que evalúa. Mientras que el ANI se basa en la variabilidad de la frecuencia cardíaca y refleja principalmente la actividad parasimpática, el SPI se centra en la actividad simpática mediante el análisis de la señal PPG. Por su parte, el índice de perfusión proporciona información sobre el flujo sanguíneo periférico, pero no está diseñado específicamente para evaluar la nocicepción.
 
