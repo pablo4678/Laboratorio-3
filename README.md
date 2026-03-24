@@ -1,5 +1,4 @@
-# Laboratorio-3
-Cálculo ambulatorio del índice pletismográfico quirúrgico
+
 # Laboratorio: Índice Pletismográfico Quirúrgico (SPI)
 
 ## Objetivos
@@ -44,17 +43,17 @@ Se calcula a partir de dos variables derivadas de la señal PPG:
 
 Su expresión matemática es:
 
-\[
+
 SPI = 100 - (0.33 \cdot PPGA_{norm} + 0.67 \cdot HBI_{norm})
-\]
+
 
 Donde:
-- \(PPGA_{norm}\): amplitud normalizada del pulso  
-- \(HBI_{norm}\): intervalo entre latidos normalizado  
+- PPGA_norm: amplitud normalizada del pulso  
+- HBI_norm: intervalo entre latidos normalizado
 
 Valores típicos:
-- 20 – 50 → analgesia adecuada  
-- > 50 → posible activación nociceptiva [5]
+- 20 – 50 analgesia adecuada  
+- Cuando el índice supera los 50, hay una posible activación nociceptiva [5]
 
 ---
 
