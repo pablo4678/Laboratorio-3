@@ -48,8 +48,8 @@ $$SPI = 100 - (0.33 \cdot PPGA_{norm} + 0.67 \cdot HBI_{norm})$$
 
 
 Donde:
-- $PPGA_norm$: amplitud normalizada del pulso  
-- $HBI_norm:$ intervalo entre latidos normalizado
+- $PPGA_{norm}$: amplitud normalizada del pulso  
+- $HBI_{norm}:$ intervalo entre latidos normalizado
 
 Valores típicos:
 - 20 – 50 analgesia adecuada  
