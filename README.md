@@ -22,6 +22,8 @@ La nocicepción corresponde al proceso fisiológico de detección de estímulos 
 
 ## Fotopletismografía (PPG)
 
+<img width="843" height="422" alt="image" src="https://github.com/user-attachments/assets/49406095-0cce-46b5-ab24-0693b0f1341e" />
+
 La fotopletismografía es una técnica óptica que permite medir cambios en el volumen sanguíneo periférico mediante la absorción de luz en los tejidos [3]. Esta señal contiene información relevante sobre:
 
 - Frecuencia cardíaca  
@@ -86,6 +88,12 @@ El CPT consiste en sumergir la mano en agua fría para inducir activación simp�
 # Implementación en MATLAB
 
 ## Captura y cálculo del SPI
+
+Para tomar y analizar la señal, se usó el sensor MAX30102 usado para fotopletismografía. Para el procesamiento de la señal se empleó un filtro pasa banda Butterworth entre 0.5 y 3 Hz, adecuado para aislar el rango típico de la frecuencia cardíaca y eliminar tanto la deriva de baja frecuencia como el ruido de alta frecuencia. La detección de picos se realizó mediante un método basado en derivadas, identificando los máximos locales cuando la señal cambia de pendiente positiva a negativa y presenta curvatura descendente, junto con un periodo refractario que evita múltiples detecciones por latido, logrando así una identificación más precisa frente al ruido en comparación con otros métodos basados únicamente en umbrales. 
+
+
+
+<img width="1410" height="788" alt="image" src="https://github.com/user-attachments/assets/fc0d39a6-d558-4217-bb2e-456f17c1ee8c" />
 
 
 1. Entrada del usuario
@@ -165,7 +173,6 @@ Muestra la señal filtrada y suavizada en función del tiempo, después de un pe
 
 26. Gráfica final del SPI
 Al finalizar, muestra la evolución del SPI en el tiempo
-<img width="1410" height="788" alt="image" src="https://github.com/user-attachments/assets/fc0d39a6-d558-4217-bb2e-456f17c1ee8c" />
 
 
 <img width="1410" height="1284" alt="image" src="https://github.com/user-attachments/assets/b2d69883-5ac3-42f5-a534-584e77531358" />
