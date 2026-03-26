@@ -174,11 +174,8 @@ Muestra la señal filtrada y suavizada en función del tiempo, después de un pe
 26. Gráfica final del SPI
 Al finalizar, muestra la evolución del SPI en el tiempo
 
+<img width="451" height="594" alt="image" src="https://github.com/user-attachments/assets/7fa2fad2-fb75-4340-a8c4-a143166c71a5" />
 
-<img width="1410" height="1284" alt="image" src="https://github.com/user-attachments/assets/b2d69883-5ac3-42f5-a534-584e77531358" />
-```
-
-```
 
 # Resultados y análisis
 
