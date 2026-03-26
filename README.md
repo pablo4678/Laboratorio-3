@@ -91,10 +91,10 @@ El CPT consiste en sumergir la mano en agua fría para inducir activación simp�
 
 Para tomar y analizar la señal, se usó el sensor MAX30102 usado para fotopletismografía. Para el procesamiento de la señal se empleó un filtro pasa banda Butterworth entre 0.5 y 3 Hz, adecuado para aislar el rango típico de la frecuencia cardíaca y eliminar tanto la deriva de baja frecuencia como el ruido de alta frecuencia. La detección de picos se realizó mediante un método basado en derivadas, identificando los máximos locales cuando la señal cambia de pendiente positiva a negativa y presenta curvatura descendente, junto con un periodo refractario que evita múltiples detecciones por latido, logrando así una identificación más precisa frente al ruido en comparación con otros métodos basados únicamente en umbrales. 
 
+<img width="736" height="302" alt="image" src="https://github.com/user-attachments/assets/0e391537-b3f9-48a6-8b8d-2cbf7694c810" />
+<img width="443" height="118" alt="image" src="https://github.com/user-attachments/assets/1b9cde40-2177-47c7-a8dd-4a4272197f93" />
 
-
-<img width="1410" height="788" alt="image" src="https://github.com/user-attachments/assets/fc0d39a6-d558-4217-bb2e-456f17c1ee8c" />
-
+A continuación se describe cómo funciona el código de procesamiento y detección:
 
 1. Entrada del usuario
 Solicita la duración de la captura en segundos y valida que sea un valor positivo.
