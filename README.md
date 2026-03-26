@@ -87,6 +87,92 @@ El CPT consiste en sumergir la mano en agua fría para inducir activación simp�
 
 ## Captura y cálculo del SPI
 
+
+1. Entrada del usuario
+Solicita la duración de la captura en segundos y valida que sea un valor positivo.
+
+2. Comunicación serial
+Abre la conexión con Arduino en el puerto COM10 a 115200 baudios, define el terminador de línea y limpia el buffer de datos.
+
+3. Filtro pasa banda
+Diseña un filtro Butterworth entre 0.5 y 3 Hz para aislar la señal cardíaca y eliminar ruido de baja y alta frecuencia.
+
+4. Configuración de la gráfica
+Crea dos líneas animadas: una para la señal PPG y otra para los picos detectados, además define etiquetas y límites del eje.
+
+5. Inicialización del tiempo
+Guarda el tiempo inicial para calcular el eje temporal en segundos durante la adquisición.
+
+6. Variables de detección
+Inicializa variables para calcular derivadas, controlar el tiempo entre picos y evitar detecciones múltiples (periodo refractario).
+
+7. Variables para SPI
+Define buffers para almacenar los últimos valores de intervalo entre latidos (HBI) y amplitud del pulso (PPGA), usados en el cálculo del índice.
+
+8. Baseline
+Crea un buffer para estimar dinámicamente el nivel base de la señal.
+
+9. Bucle principal
+Ejecuta la adquisición y procesamiento de datos hasta completar el tiempo definido por el usuario.
+
+10. Lectura de datos
+Lee valores desde el puerto serial, los convierte a número y descarta datos inválidos.
+
+11. Conversión a voltaje
+Escala el valor leído a voltaje suponiendo un ADC de 10 bits.
+
+12. Filtrado de la señal
+Aplica el filtro pasa banda para limpiar la señal antes de analizarla.
+
+13. Suavizado
+Aplica una media móvil para mejorar la visualización, sin afectar la detección de picos.
+
+14. Cálculo de derivadas
+Calcula la primera y segunda derivada para identificar cambios en la pendiente y curvatura de la señal.
+
+15. Detección de picos
+Detecta un pico cuando la señal pasa de subir a bajar, presenta curvatura negativa y se respeta el tiempo mínimo entre latidos.
+
+16. Registro del pico
+Guarda el valor y tiempo del pico detectado y lo muestra en la gráfica.
+
+17. Cálculo de HBI
+Calcula el intervalo de tiempo entre dos picos consecutivos.
+
+18. Cálculo del baseline
+Estima el nivel base como el promedio de las muestras recientes.
+
+19. Cálculo de PPGA
+Obtiene la amplitud del pulso como la diferencia entre el pico y el baseline.
+
+20. Actualización de buffers
+Almacena los valores recientes de HBI y PPGA en ventanas deslizantes de tamaño fijo.
+
+21. Normalización
+Escala HBI y PPGA a un rango de 0 a 100 usando los valores mínimos y máximos del buffer.
+
+22. Cálculo del SPI
+Combina PPGA y HBI normalizados para obtener un índice de perfusión ajustado.
+
+23. Salida en consola
+Imprime el valor del SPI en tiempo real.
+
+24. Actualización del baseline buffer
+Mantiene un conjunto de muestras recientes para recalcular continuamente la línea base.
+
+25. Visualización de la señal
+Muestra la señal filtrada y suavizada en función del tiempo, después de un periodo inicial de estabilización.
+
+26. Gráfica final del SPI
+Al finalizar, muestra la evolución del SPI en el tiempo
+<img width="1410" height="788" alt="image" src="https://github.com/user-attachments/assets/fc0d39a6-d558-4217-bb2e-456f17c1ee8c" />
+
+
+<img width="1410" height="1284" alt="image" src="https://github.com/user-attachments/assets/b2d69883-5ac3-42f5-a534-584e77531358" />
+```
+
+```
+
 # Resultados y análisis
 
 ## Comparación con valores clínicos
