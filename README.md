@@ -180,12 +180,15 @@ Al finalizar, muestra la evolución del SPI en el tiempo
 # Resultados y análisis
 
 ## Comparación con valores clínicos
+<img width="767" height="449" alt="image" src="https://github.com/user-attachments/assets/27fdbf9a-83a3-4717-8436-555db3d48c60" />
 
-Los resultados obtenidos durante la práctica muestran un comportamiento coherente del Índice Pletismográfico Quirúrgico (SPI) en relación con las distintas fases del protocolo experimental. Durante la fase inicial de reposo, los valores del SPI se mantuvieron relativamente estables y dentro de un rango bajo, lo cual es consistente con un estado de baja activación simpática y predominio parasimpático. Este comportamiento concuerda con los rangos reportados en la literatura clínica, donde valores entre 20 y 50 se consideran indicativos de un nivel adecuado de analgesia en pacientes sometidos a anestesia general [5].
+Los resultados obtenidos evidencian que el comportamiento del Índice Pletismográfico Quirúrgico (SPI) no fue completamente estable durante la fase inicial de reposo, presentando una variabilidad considerable en los primeros segundos del registro. Esta fluctuación puede atribuirse a factores como la adaptación del sensor, el movimiento del sujeto o la estabilización del procesamiento de la señal (filtrado y normalización), lo cual afecta directamente el cálculo del SPI.
 
-Al iniciar el Cold Pressor Test (CPT), se evidenció un incremento significativo en los valores del SPI. Este aumento puede explicarse por la activación del sistema nervioso simpático frente al estímulo frío, el cual induce vasoconstricción periférica y un aumento de la frecuencia cardíaca. Desde el punto de vista de la señal PPG, esto se traduce en una disminución de la amplitud del pulso (PPGA) y una reducción del intervalo entre latidos (HBI). Dado que el SPI se calcula a partir de estas dos variables normalizadas, dichos cambios provocan un incremento en el índice, reflejando una mayor actividad nociceptiva. Este comportamiento ha sido ampliamente documentado en estudios clínicos donde el SPI responde de forma sensible a estímulos dolorosos agudos [5,6].
+A partir de aproximadamente el segundo 40, coincidiendo con la aplicación del estímulo frío, se observa un incremento sostenido en los valores del SPI. Este aumento es consistente con la activación del sistema nervioso simpático ante un estímulo nociceptivo, lo que genera vasoconstricción periférica y cambios en la señal PPG, particularmente una disminución de la amplitud del pulso (PPGA) y una reducción del intervalo entre latidos (HBI). Estos cambios se reflejan en un incremento del SPI, evidenciando su sensibilidad frente a estímulos dolorosos.[5,6]
 
-Durante la fase de recuperación, una vez finalizado el estímulo, los valores del SPI mostraron una tendencia decreciente, aproximándose gradualmente a los niveles basales. Este fenómeno refleja la disminución de la actividad simpática y la restauración del equilibrio autonómico, evidenciando la capacidad del SPI para capturar dinámicamente cambios en la fisiología del individuo en función del contexto experimental.
+Tras la retirada del estímulo, se aprecia una disminución en los valores del SPI, lo que sugiere una reducción de la activación simpática. Sin embargo, los valores no retornan completamente a los niveles iniciales observados al inicio del experimento. Este comportamiento puede estar relacionado con una recuperación fisiológica incompleta, efectos residuales del estímulo o la variabilidad inherente al sistema de medición.
+
+En conjunto, los resultados muestran que el SPI logra capturar la respuesta al estímulo nociceptivo, aunque su comportamiento en reposo y recuperación puede verse afectado por la variabilidad de la señal y las condiciones experimentales.
 
 ---
 
@@ -195,7 +198,7 @@ El SPI representa una herramienta valiosa para la estimación indirecta de la no
 
 Sin embargo, es importante destacar que el SPI no mide el dolor como experiencia subjetiva, sino la respuesta fisiológica asociada a la activación del sistema nervioso autónomo. Esto implica que factores distintos al dolor, como el estrés emocional, la ansiedad o cambios en la temperatura, pueden generar respuestas similares en el índice. Por lo tanto, su interpretación debe realizarse con cautela y en conjunto con otros parámetros clínicos.
 
-Adicionalmente, la señal PPG es susceptible a artefactos de movimiento, variaciones en la presión de contacto del sensor y cambios en la perfusión periférica, lo que puede afectar la calidad de la señal y, por ende, la precisión del SPI. Estas limitaciones son particularmente relevantes en entornos no controlados, donde el movimiento del usuario es inevitable. A pesar de ello, el SPI sigue siendo una herramienta útil cuando se emplea bajo condiciones adecuadas y con un procesamiento de señal robusto.
+Adicionalmente, la señal PPG es susceptible a artefactos de movimiento, variaciones en la presión de contacto del sensor y cambios en la perfusión periférica, lo que puede afectar la calidad de la señal y, por ende, la precisión del SPI. Estas limitaciones son particularmente relevantes en entornos no controlados, donde el movimiento del usuario es inevitable. A pesar de ello, el SPI sigue siendo una herramienta útil cuando se emplea bajo condiciones adecuadas y con un procesamiento de señal adecuado.
 
 ---
 
